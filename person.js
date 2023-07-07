@@ -30,9 +30,9 @@ const Person = mongoose.model("Person", personSchema);
 
 function createOnePerson() {
   const person = new Person({
-    name: "Nizar",
-    age: 28,
-    favoriteFoods: ["Spaghetti", "Kamouniya"],
+    name: "Ayoub",
+    age: 32,
+    favoriteFoods: ["couscous"],
   });
   // save the new person
   person
@@ -46,7 +46,6 @@ function createOnePerson() {
 function createManyPeople() {
   const arrayOfPeople = [
     { name: "Mohamed", age: 24, favoriteFoods: ["Sushi", "burritos"] },
-    { name: "mariem", age: 37, favoriteFoods: ["burritos", "Ice Cream"] },
     { name: "Mary", age: 41, favoriteFoods: ["burritos", "Pizza"] },
     { name: "Thamer", age: 28, favoriteFoods: ["Tacos", "Pizza"] },
     { name: "abir", age: 21, favoriteFoods: ["burritos", "Pasta"] },
